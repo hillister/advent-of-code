@@ -1,8 +1,21 @@
-const data1 = [3, 4, 2, 1, 3, 3]
+const fs = require('fs');
+const data = fs.readFileSync('test.txt', 'utf8'); 
 
-const data2 = [4, 3, 5, 3, 9, 3]
 
-data1.sort(function(a, b){return a - b})
-data2.sort(function(a, b){return a - b})
+const rows = data.split("\n");
 
-console.log(data1, data2)
+const column1 = []
+const column2 = []
+
+for (let row of rows) {
+    const splitline = row.trim().split(" ").filter(num => num !== "");
+    const [first, second] = splitline.map(num => parseInt(num, 10))
+    column1.push(first)
+    column2.push(second)
+
+
+}
+
+console.log(column1)
+
+console.log(column2)
