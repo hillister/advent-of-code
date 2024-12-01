@@ -16,6 +16,25 @@ for (let row of rows) {
 
 }
 
-console.log(column1)
+column1.sort((a, b) => a - b);
+column2.sort((a, b) => a - b);
 
+console.log(column1)
 console.log(column2)
+
+const arrayDifference = []
+
+for (let i = 0; i < column1.length; i++){
+    let difference = column1[i] - column2[i]
+
+    arrayDifference.push(Math.abs(difference))
+}
+console.log(arrayDifference)
+
+let sum = 0
+
+for (let j = 0; j <arrayDifference.length; j++){
+    sum += arrayDifference[j]
+}
+
+console.log(sum)
