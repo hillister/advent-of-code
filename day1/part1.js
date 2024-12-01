@@ -19,8 +19,7 @@ for (let row of rows) {
 column1.sort((a, b) => a - b);
 column2.sort((a, b) => a - b);
 
-console.log(column1)
-console.log(column2)
+
 
 const arrayDifference = []
 
