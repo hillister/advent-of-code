@@ -1,4 +1,5 @@
-🎄 Advent of Code 2024 - JavaScript 🎅
-Hey there! 👋 This is my first time doing Advent of Code, and I'm solving the puzzles using JavaScript. 🖥️✨
+# 🎄 Advent of Code 2024 - JavaScript 🎅
 
-Each day's solution is in its own file (like day1.js, day2.js)
+Welcome to my first year of **Advent of Code**! 🥳 This year, I’m tackling the puzzles using **JavaScript**. 🖥️✨
+
+Each day’s challenge has its own file (like `day1.js`, `day2.js`)
